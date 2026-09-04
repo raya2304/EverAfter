@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EverAfter | Wedding Planning</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: "#FFF8F0",
+                        brown: "#4A3025",
+                        rose: "#C98B8B",
+                        gold: "#C6A15B"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream text-brown">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <h1 class="text-2xl md:text-3xl font-serif font-bold text-brown">
+            Ever<span class="text-rose">After</span>
+        </h1>
+
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="#home" class="hover:text-rose">Home</a>
+            <a href="#services" class="hover:text-rose">Services</a>
+            <a href="#venues" class="hover:text-rose">Venues</a>
+            <a href="#gallery" class="hover:text-rose">Gallery</a>
+            <a href="#planner" class="hover:text-rose">Planner</a>
+            <a href="#contact" class="hover:text-rose">Contact</a>
+        </div>
+
+        <button onclick="openMenu()" class="md:hidden text-2xl">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white px-6 pb-5">
+        <a href="#home" class="block py-2">Home</a>
+        <a href="#services" class="block py-2">Services</a>
+        <a href="#venues" class="block py-2">Venues</a>
+        <a href="#gallery" class="block py-2">Gallery</a>
+        <a href="#planner" class="block py-2">Planner</a>
+        <a href="#contact" class="block py-2">Contact</a>
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home"
+    class="min-h-screen flex items-center justify-center text-white relative"
+    style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80'); background-size:cover; background-position:center;">
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative text-center max-w-4xl px-6 pt-20">
+
+        <p class="uppercase tracking-[5px] text-gold mb-5">
+            Wedding Planning & Events
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">
+            Your Forever<br>
+            <span class="text-rose">Starts Here</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
+            From intimate ceremonies to grand celebrations,
+            EverAfter helps you create a wedding that reflects
+            your unique love story.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+            <a href="#planner"
+                class="bg-rose hover:bg-white hover:text-brown px-8 py-4 rounded-full font-semibold transition">
+                Start Planning
+            </a>
+
+            <a href="#gallery"
+                class="border border-white hover:bg-white hover:text-brown px-8 py-4 rounded-full font-semibold transition">
+                Explore Weddings
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="py-20 px-6">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+        <p class="text-rose uppercase tracking-widest font-semibold">
+            Everything You Need
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mt-3 mb-6">
+            Plan Your Perfect Day
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-gray-600">
+            Your wedding should be beautiful, memorable and stress-free.
+            Discover trusted vendors, stunning venues and powerful planning
+            tools to bring your dream celebration to life.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="py-20 bg-white px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-14">
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Our Services
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Everything For Your Big Day
+            </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+            <div class="p-8 bg-cream rounded-2xl hover:-translate-y-2 transition shadow-sm">
+                <div class="text-4xl mb-5">💒</div>
+                <h3 class="text-2xl font-serif font-bold mb-3">
+                    Wedding Venues
+                </h3>
+                <p class="text-gray-600">
+                    Discover luxurious hotels, elegant halls, gardens,
+                    resorts and beautiful destination venues.
+                </p>
+            </div>
+
+            <div class="p-8 bg-cream rounded-2xl hover:-translate-y-2 transition shadow-sm">
+                <div class="text-4xl mb-5">🌸</div>
+                <h3 class="text-2xl font-serif font-bold mb-3">
+                    Decorations
+                </h3>
+                <p class="text-gray-600">
+                    Transform your venue with floral arrangements,
+                    stage designs, lighting and elegant themes.
+                </p>
+            </div>
+
+            <div class="p-8 bg-cream rounded-2xl hover:-translate-y-2 transition shadow-sm">
+                <div class="text-4xl mb-5">📸</div>
+                <h3 class="text-2xl font-serif font-bold mb-3">
+                    Photography
+                </h3>
+                <p class="text-gray-600">
+                    Capture every smile, emotion and unforgettable
+                    moment with professional wedding photographers.
+                </p>
+            </div>
+
+            <div class="p-8 bg-cream rounded-2xl hover:-translate-y-2 transition shadow-sm">
+                <div class="text-4xl mb-5">👰</div>
+                <h3 class="text-2xl font-serif font-bold mb-3">
+                    Bridal Makeup
+                </h3>
+                <p class="text-gray-600">
+                    Find talented makeup artists and hairstylists
+                    for your perfect bridal look.
+                </p>
+            </div>
+
+            <div class="p-8 bg-cream rounded-2xl hover:-translate-y-2 transition shadow-sm">
+                <div class="text-4xl mb-5">🍽️</div>
+                <h3 class="text-2xl font-serif font-bold mb-3">
+                    Catering
+                </h3>
+                <p class="text-gray-600">
+                    Create unforgettable dining experiences with
+                    traditional, modern and customized menus.
+                </p>
+            </div>
+
+            <div class="p-8 bg-cream rounded-2xl hover:-translate-y-2 transition shadow-sm">
+                <div class="text-4xl mb-5">🎵</div>
+                <h3 class="text-2xl font-serif font-bold mb-3">
+                    Entertainment
+                </h3>
+                <p class="text-gray-600">
+                    DJs, live bands, traditional performances and
+                    entertainment for every celebration.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="py-20 px-6">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+
+        <img
+            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=80"
+            class="rounded-3xl shadow-xl w-full h-[500px] object-cover">
+
+        <div>
+
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Why EverAfter
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mt-3 mb-7">
+                Your Dream Wedding,
+                Perfectly Planned
+            </h2>
+
+            <div class="space-y-6">
+
+                <div>
+                    <h3 class="text-xl font-bold">
+                        Find Your Perfect Venue
+                    </h3>
+                    <p class="text-gray-600 mt-1">
+                        Explore beautiful venues that match your style,
+                        guest count and budget.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold">
+                        Trusted Wedding Vendors
+                    </h3>
+                    <p class="text-gray-600 mt-1">
+                        Connect with experienced professionals for
+                        photography, decoration, makeup and catering.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold">
+                        Smart Budget Planning
+                    </h3>
+                    <p class="text-gray-600 mt-1">
+                        Keep your wedding expenses organized with our
+                        simple budget planner.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold">
+                        Stay Organized
+                    </h3>
+                    <p class="text-gray-600 mt-1">
+                        Manage your checklist, guests and important
+                        wedding dates in one place.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= VENUES ================= -->
+
+<section id="venues" class="py-20 bg-white px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-12">
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Beautiful Locations
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Find Your Dream Venue
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Venue 1 -->
+            <div class="bg-cream rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80"
+                    class="h-64 w-full object-cover">
+
+                <div class="p-6">
+
+                    <span class="text-sm text-rose">
+                        Luxury Wedding Hall
+                    </span>
+
+                    <h3 class="text-2xl font-serif font-bold mt-2">
+                        The Grand Palace
+                    </h3>
+
+                    <p class="text-gray-500 mt-1">
+                        Chennai
+                    </p>
+
+                    <p class="text-gold mt-3">
+                        ★★★★★ 4.9
+                    </p>
+
+                    <p class="font-semibold mt-3">
+                        Starting from ₹1,50,000
+                    </p>
+
+                    <button class="mt-5 w-full bg-brown text-white py-3 rounded-full hover:bg-rose transition">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Venue 2 -->
+            <div class="bg-cream rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80"
+                    class="h-64 w-full object-cover">
+
+                <div class="p-6">
+
+                    <span class="text-sm text-rose">
+                        Garden Wedding
+                    </span>
+
+                    <h3 class="text-2xl font-serif font-bold mt-2">
+                        Rose Garden Estate
+                    </h3>
+
+                    <p class="text-gray-500 mt-1">
+                        Coimbatore
+                    </p>
+
+                    <p class="text-gold mt-3">
+                        ★★★★★ 4.8
+                    </p>
+
+                    <p class="font-semibold mt-3">
+                        Starting from ₹95,000
+                    </p>
+
+                    <button class="mt-5 w-full bg-brown text-white py-3 rounded-full hover:bg-rose transition">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Venue 3 -->
+            <div class="bg-cream rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80"
+                    class="h-64 w-full object-cover">
+
+                <div class="p-6">
+
+                    <span class="text-sm text-rose">
+                        Resort Wedding
+                    </span>
+
+                    <h3 class="text-2xl font-serif font-bold mt-2">
+                        Palm Grove Resort
+                    </h3>
+
+                    <p class="text-gray-500 mt-1">
+                        Pondicherry
+                    </p>
+
+                    <p class="text-gold mt-3">
+                        ★★★★★ 4.9
+                    </p>
+
+                    <p class="font-semibold mt-3">
+                        Starting from ₹2,00,000
+                    </p>
+
+                    <button class="mt-5 w-full bg-brown text-white py-3 rounded-full hover:bg-rose transition">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-10">
+
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Inspiration
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Beautiful Wedding Moments
+            </h2>
+
+        </div>
+
+
+        <!-- Filter buttons -->
+
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+
+            <button onclick="filterGallery('all')"
+                class="filterBtn px-6 py-2 rounded-full bg-brown text-white">
+                All
+            </button>
+
+            <button onclick="filterGallery('ceremony')"
+                class="filterBtn px-6 py-2 rounded-full bg-white border">
+                Ceremony
+            </button>
+
+            <button onclick="filterGallery('decoration')"
+                class="filterBtn px-6 py-2 rounded-full bg-white border">
+                Decoration
+            </button>
+
+            <button onclick="filterGallery('bridal')"
+                class="filterBtn px-6 py-2 rounded-full bg-white border">
+                Bridal
+            </button>
+
+            <button onclick="filterGallery('reception')"
+                class="filterBtn px-6 py-2 rounded-full bg-white border">
+                Reception
+            </button>
+
+        </div>
+
+
+        <div id="galleryGrid"
+            class="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+            <img data-category="ceremony"
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80"
+                class="galleryItem w-full h-72 object-cover rounded-2xl">
+
+            <img data-category="decoration"
+                src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=700&q=80"
+                class="galleryItem w-full h-72 object-cover rounded-2xl">
+
+            <img data-category="bridal"
+                src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80"
+                class="galleryItem w-full h-72 object-cover rounded-2xl">
+
+            <img data-category="reception"
+                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=700&q=80"
+                class="galleryItem w-full h-72 object-cover rounded-2xl">
+
+            <img data-category="decoration"
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80"
+                class="galleryItem w-full h-72 object-cover rounded-2xl">
+
+            <img data-category="bridal"
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=80"
+                class="galleryItem w-full h-72 object-cover rounded-2xl">
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= COUNTDOWN ================= -->
+
+<section class="py-20 bg-brown text-white px-6">
+
+    <div class="text-center max-w-5xl mx-auto">
+
+        <p class="text-gold uppercase tracking-widest">
+            The Big Day
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mt-3">
+            Counting Down To Forever
+        </h2>
+
+        <div class="grid grid-cols-4 gap-3 md:gap-8 mt-12">
+
+            <div>
+                <div id="days" class="text-4xl md:text-6xl font-bold">
+                    00
+                </div>
+                <p class="text-gray-300 mt-2">Days</p>
+            </div>
+
+            <div>
+                <div id="hours" class="text-4xl md:text-6xl font-bold">
+                    00
+                </div>
+                <p class="text-gray-300 mt-2">Hours</p>
+            </div>
+
+            <div>
+                <div id="minutes" class="text-4xl md:text-6xl font-bold">
+                    00
+                </div>
+                <p class="text-gray-300 mt-2">Minutes</p>
+            </div>
+
+            <div>
+                <div id="seconds" class="text-4xl md:text-6xl font-bold">
+                    00
+                </div>
+                <p class="text-gray-300 mt-2">Seconds</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PLANNER ================= -->
+
+<section id="planner" class="py-20 px-6">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-12">
+
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Smart Planning
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Plan Your Wedding
+            </h2>
+
+        </div>
+
+
+        <div class="grid lg:grid-cols-2 gap-8">
+
+
+            <!-- Budget Calculator -->
+
+            <div class="bg-white p-8 rounded-3xl shadow">
+
+                <h3 class="text-2xl font-serif font-bold mb-6">
+                    Wedding Budget Planner
+                </h3>
+
+                <label class="font-semibold">
+                    Total Budget
+                </label>
+
+                <input
+                    id="totalBudget"
+                    type="number"
+                    placeholder="Enter your budget"
+                    class="w-full mt-2 border rounded-xl p-3 outline-none focus:ring-2 focus:ring-rose">
+
+                <div class="grid grid-cols-2 gap-4 mt-5">
+
+                    <input id="venue"
+                        type="number"
+                        placeholder="Venue"
+                        class="border rounded-xl p-3">
+
+                    <input id="food"
+                        type="number"
+                        placeholder="Catering"
+                        class="border rounded-xl p-3">
+
+                    <input id="decoration"
+                        type="number"
+                        placeholder="Decoration"
+                        class="border rounded-xl p-3">
+
+                    <input id="photo"
+                        type="number"
+                        placeholder="Photography"
+                        class="border rounded-xl p-3">
+
+                    <input id="makeup"
+                        type="number"
+                        placeholder="Makeup"
+                        class="border rounded-xl p-3">
+
+                    <input id="other"
+                        type="number"
+                        placeholder="Other"
+                        class="border rounded-xl p-3">
+
+                </div>
+
+                <button onclick="calculateBudget()"
+                    class="w-full bg-brown text-white py-3 rounded-xl mt-6 hover:bg-rose transition">
+                    Calculate Budget
+                </button>
+
+                <div class="mt-7 bg-cream p-5 rounded-xl">
+
+                    <div class="flex justify-between">
+                        <span>Total Budget</span>
+                        <strong id="budgetDisplay">₹0</strong>
+                    </div>
+
+                    <div class="flex justify-between mt-2">
+                        <span>Spent</span>
+                        <strong id="spentDisplay">₹0</strong>
+                    </div>
+
+                    <div class="flex justify-between mt-2">
+                        <span>Remaining</span>
+                        <strong id="remainingDisplay">₹0</strong>
+                    </div>
+
+                    <div class="w-full bg-gray-200 h-3 rounded-full mt-5">
+                        <div id="budgetBar"
+                            class="bg-rose h-3 rounded-full"
+                            style="width:0%">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Checklist -->
+
+            <div class="bg-white p-8 rounded-3xl shadow">
+
+                <h3 class="text-2xl font-serif font-bold mb-6">
+                    Wedding Checklist
+                </h3>
+
+                <div class="flex gap-2">
+
+                    <input id="taskInput"
+                        type="text"
+                        placeholder="Add a wedding task..."
+                        class="flex-1 border rounded-xl p-3">
+
+                    <button onclick="addTask()"
+                        class="bg-brown text-white px-5 rounded-xl">
+                        Add
+                    </button>
+
+                </div>
+
+                <ul id="taskList" class="mt-6 space-y-3">
+
+                    <li class="flex justify-between items-center bg-cream p-3 rounded-xl">
+                        <span>Book Wedding Venue</span>
+                        <button onclick="this.parentElement.remove()"
+                            class="text-rose font-bold">
+                            ×
+                        </button>
+                    </li>
+
+                    <li class="flex justify-between items-center bg-cream p-3 rounded-xl">
+                        <span>Choose Wedding Dress</span>
+                        <button onclick="this.parentElement.remove()"
+                            class="text-rose font-bold">
+                            ×
+                        </button>
+                    </li>
+
+                    <li class="flex justify-between items-center bg-cream p-3 rounded-xl">
+                        <span>Send Invitations</span>
+                        <button onclick="this.parentElement.remove()"
+                            class="text-rose font-bold">
+                            ×
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= VENDORS ================= -->
+
+<section class="py-20 bg-white px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-12">
+
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Trusted Professionals
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Meet Our Wedding Vendors
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-7">
+
+            <div class="border rounded-2xl p-6 hover:shadow-xl transition">
+
+                <div class="w-16 h-16 rounded-full bg-rose/20 flex items-center justify-center text-3xl">
+                    📸
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    DreamLens Photography
+                </h3>
+
+                <p class="text-gray-500">
+                    Wedding Photography
+                </p>
+
+                <p class="text-gold mt-3">
+                    ★★★★★ 4.9
+                </p>
+
+                <p class="mt-3 font-semibold">
+                    ₹60,000 – ₹1,80,000
+                </p>
+
+                <button class="mt-5 border border-brown px-5 py-2 rounded-full hover:bg-brown hover:text-white">
+                    View Profile
+                </button>
+
+            </div>
+
+
+            <div class="border rounded-2xl p-6 hover:shadow-xl transition">
+
+                <div class="w-16 h-16 rounded-full bg-rose/20 flex items-center justify-center text-3xl">
+                    🌸
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Blossom Decor Studio
+                </h3>
+
+                <p class="text-gray-500">
+                    Wedding Decoration
+                </p>
+
+                <p class="text-gold mt-3">
+                    ★★★★★ 4.8
+                </p>
+
+                <p class="mt-3 font-semibold">
+                    ₹80,000 – ₹2,50,000
+                </p>
+
+                <button class="mt-5 border border-brown px-5 py-2 rounded-full hover:bg-brown hover:text-white">
+                    View Profile
+                </button>
+
+            </div>
+
+
+            <div class="border rounded-2xl p-6 hover:shadow-xl transition">
+
+                <div class="w-16 h-16 rounded-full bg-rose/20 flex items-center justify-center text-3xl">
+                    👰
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Glow Bridal Studio
+                </h3>
+
+                <p class="text-gray-500">
+                    Bridal Makeup
+                </p>
+
+                <p class="text-gold mt-3">
+                    ★★★★★ 4.7
+                </p>
+
+                <p class="mt-3 font-semibold">
+                    ₹15,000 – ₹50,000
+                </p>
+
+                <button class="mt-5 border border-brown px-5 py-2 rounded-full hover:bg-brown hover:text-white">
+                    View Profile
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= HONEYMOON ================= -->
+
+<section class="py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-12">
+
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                After The Wedding
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Continue Your Journey Together
+            </h2>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="relative rounded-2xl overflow-hidden group">
+
+                <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=700&q=80"
+                    class="h-80 w-full object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-5 left-5 text-white">
+                    <h3 class="text-2xl font-serif font-bold">
+                        Maldives
+                    </h3>
+                    <p>From ₹80,000</p>
+                </div>
+
+            </div>
+
+
+            <div class="relative rounded-2xl overflow-hidden group">
+
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80"
+                    class="h-80 w-full object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-5 left-5 text-white">
+                    <h3 class="text-2xl font-serif font-bold">
+                        Bali
+                    </h3>
+                    <p>From ₹60,000</p>
+                </div>
+
+            </div>
+
+
+            <div class="relative rounded-2xl overflow-hidden group">
+
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80"
+                    class="h-80 w-full object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-5 left-5 text-white">
+                    <h3 class="text-2xl font-serif font-bold">
+                        Paris
+                    </h3>
+                    <p>From ₹1,20,000</p>
+                </div>
+
+            </div>
+
+
+            <div class="relative rounded-2xl overflow-hidden group">
+
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=700&q=80"
+                    class="h-80 w-full object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-5 left-5 text-white">
+                    <h3 class="text-2xl font-serif font-bold">
+                        Switzerland
+                    </h3>
+                    <p>From ₹1,50,000</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<section class="py-20 bg-rose/10 px-6">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+        <p class="text-rose uppercase tracking-widest font-semibold">
+            Happy Couples
+        </p>
+
+        <div class="text-5xl text-gold mt-6">
+            "
+        </div>
+
+        <p class="text-xl md:text-2xl font-serif leading-relaxed mt-3">
+            EverAfter made planning our wedding so much easier.
+            From finding the venue to managing our budget,
+            everything was beautifully organized.
+        </p>
+
+        <h3 class="font-bold mt-6">
+            Priya & Karthik
+        </h3>
+
+        <p class="text-gray-500">
+            Chennai
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BLOG ================= -->
+
+<section class="py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-12">
+
+            <p class="text-rose uppercase tracking-widest font-semibold">
+                Wedding Journal
+            </p>
+
+            <h2 class="text-4xl font-serif font-bold mt-3">
+                Tips & Inspiration
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-7">
+
+            <article class="bg-white rounded-2xl overflow-hidden shadow-sm">
+
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+                    class="h-56 w-full object-cover">
+
+                <div class="p-6">
+
+                    <p class="text-rose text-sm">
+                        WEDDING PLANNING
+                    </p>
+
+                    <h3 class="text-xl font-serif font-bold mt-2">
+                        10 Things To Plan Before Your Wedding
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        A simple guide to help couples organize
+                        their wedding without unnecessary stress.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="bg-white rounded-2xl overflow-hidden shadow-sm">
+
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80"
+                    class="h-56 w-full object-cover">
+
+                <div class="p-6">
+
+                    <p class="text-rose text-sm">
+                        BUDGET
+                    </p>
+
+                    <h3 class="text-xl font-serif font-bold mt-2">
+                        How To Plan A Beautiful Wedding On A Budget
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        Practical ideas to create an elegant celebration
+                        while keeping your expenses under control.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="bg-white rounded-2xl overflow-hidden shadow-sm">
+
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80"
+                    class="h-56 w-full object-cover">
+
+                <div class="p-6">
+
+                    <p class="text-rose text-sm">
+                        INSPIRATION
+                    </p>
+
+                    <h3 class="text-xl font-serif font-bold mt-2">
+                        Modern Wedding Decoration Ideas
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        Explore beautiful decoration ideas that
+                        combine traditional elegance with modern style.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+    class="py-20 bg-brown text-white px-6">
+
+    <div class="max-w-5xl mx-auto">
+
+        <div class="text-center mb-10">
+
+            <p class="text-gold uppercase tracking-widest">
+                Let's Celebrate
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mt-3">
+                Start Planning Your Dream Wedding
+            </h2>
+
+            <p class="text-gray-300 mt-4">
+                Tell us about your celebration and let us help
+                you turn your wedding dreams into reality.
+            </p>
+
+        </div>
+
+
+        <form onsubmit="submitForm(event)"
+            class="bg-white text-brown p-8 rounded-3xl">
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <input required
+                    type="text"
+                    placeholder="Your Name"
+                    class="border rounded-xl p-4">
+
+                <input required
+                    type="email"
+                    placeholder="Email Address"
+                    class="border rounded-xl p-4">
+
+                <input
+                    type="date"
+                    class="border rounded-xl p-4">
+
+                <select class="border rounded-xl p-4">
+
+                    <option>Select Wedding Service</option>
+                    <option>Venue</option>
+                    <option>Photography</option>
+                    <option>Decoration</option>
+                    <option>Makeup</option>
+                    <option>Catering</option>
+
+                </select>
+
+            </div>
+
+            <textarea
+                placeholder="Tell us about your dream wedding..."
+                class="border rounded-xl p-4 w-full mt-5 h-32"></textarea>
+
+            <button
+                class="bg-brown text-white px-8 py-4 rounded-full mt-5 hover:bg-rose transition">
+                Send Enquiry
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-[#302019] text-white py-10 px-6">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+
+        <div>
+
+            <h2 class="text-3xl font-serif font-bold">
+                Ever<span class="text-rose">After</span>
+            </h2>
+
+            <p class="text-gray-400 mt-4 max-w-sm">
+                Helping couples plan beautiful celebrations,
+                create unforgettable memories and begin their
+                forever with confidence.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3 class="font-bold text-lg">
+                Quick Links
+            </h3>
+
+            <div class="space-y-2 mt-4 text-gray-400">
+
+                <a href="#home" class="block hover:text-white">
+                    Home
+                </a>
+
+                <a href="#services" class="block hover:text-white">
+                    Services
+                </a>
+
+                <a href="#venues" class="block hover:text-white">
+                    Venues
+                </a>
+
+                <a href="#planner" class="block hover:text-white">
+                    Wedding Planner
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h3 class="font-bold text-lg">
+                Contact
+            </h3>
+
+            <div class="space-y-2 mt-4 text-gray-400">
+
+                <p>Chennai, Tamil Nadu</p>
+                <p>hello@everafter.com</p>
+                <p>+91 98765 43210</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="border-t border-white/10 mt-10 pt-6 text-center text-gray-500">
+
+        © 2026 EverAfter. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/* Mobile Menu */
+
+function openMenu() {
+
+    document
+        .getElementById("mobileMenu")
+        .classList.toggle("hidden");
+
+}
+
+
+/* Gallery Filter */
+
+function filterGallery(category) {
+
+    const images =
+        document.querySelectorAll(".galleryItem");
+
+    images.forEach(image => {
+
+        if (
+            category === "all" ||
+            image.dataset.category === category
+        ) {
+
+            image.classList.remove("hidden");
+
+        } else {
+
+            image.classList.add("hidden");
+
+        }
+
+    });
+
+}
+
+
+/* Budget Calculator */
+
+function calculateBudget() {
+
+    const total =
+        Number(document.getElementById("totalBudget").value) || 0;
+
+    const venue =
+        Number(document.getElementById("venue").value) || 0;
+
+    const food =
+        Number(document.getElementById("food").value) || 0;
+
+    const decoration =
+        Number(document.getElementById("decoration").value) || 0;
+
+    const photo =
+        Number(document.getElementById("photo").value) || 0;
+
+    const makeup =
+        Number(document.getElementById("makeup").value) || 0;
+
+    const other =
+        Number(document.getElementById("other").value) || 0;
+
+
+    const spent =
+        venue +
+        food +
+        decoration +
+        photo +
+        makeup +
+        other;
+
+    const remaining =
+        total - spent;
+
+
+    document.getElementById("budgetDisplay").innerText =
+        "₹" + total.toLocaleString("en-IN");
+
+    document.getElementById("spentDisplay").innerText =
+        "₹" + spent.toLocaleString("en-IN");
+
+    document.getElementById("remainingDisplay").innerText =
+        "₹" + remaining.toLocaleString("en-IN");
+
+
+    let percentage = 0;
+
+    if (total > 0) {
+
+        percentage =
+            (spent / total) * 100;
+
+    }
+
+    if (percentage > 100) {
+
+        percentage = 100;
+
+    }
+
+
+    document.getElementById("budgetBar")
+        .style.width = percentage + "%";
+
+}
+
+
+/* Wedding Checklist */
+
+function addTask() {
+
+    const input =
+        document.getElementById("taskInput");
+
+    const task =
+        input.value.trim();
+
+
+    if (task === "") {
+
+        alert("Please enter a task.");
+
+        return;
+
+    }
+
+
+    const li =
+        document.createElement("li");
+
+    li.className =
+        "flex justify-between items-center bg-cream p-3 rounded-xl";
+
+
+    li.innerHTML = `
+
+        <span>${task}</span>
+
+        <button
+            onclick="this.parentElement.remove()"
+            class="text-rose font-bold">
+            ×
+        </button>
+
+    `;
+
+
+    document
+        .getElementById("taskList")
+        .appendChild(li);
+
+
+    input.value = "";
+
+}
+
+
+/* Wedding Countdown */
+
+const weddingDate =
+    new Date("December 20, 2026 18:30:00").getTime();
+
+
+setInterval(function () {
+
+    const now =
+        new Date().getTime();
+
+    const distance =
+        weddingDate - now;
+
+
+    if (distance <= 0) {
+
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+    const hours =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60 * 24)) /
+            (1000 * 60 * 60)
+        );
+
+    const minutes =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+    const seconds =
+        Math.floor(
+            (distance %
+            (1000 * 60)) /
+            1000
+        );
+
+
+    document.getElementById("days").innerText =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").innerText =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").innerText =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").innerText =
+        String(seconds).padStart(2, "0");
+
+}, 1000);
+
+
+/* Contact Form */
+
+function submitForm(event) {
+
+    event.preventDefault();
+
+    alert(
+        "Thank you! Your wedding enquiry has been submitted."
+    );
+
+}
+
+</script>
+
+</body>
+</html>
